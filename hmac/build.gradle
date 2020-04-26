@@ -21,7 +21,7 @@ bootJar {
     enabled = false
 }
 jar {
-    archiveBaseName = "dtobase"
+    archiveBaseName = "hmac"
     enabled = true
 }
 
