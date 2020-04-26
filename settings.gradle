@@ -1,0 +1,3 @@
+rootProject.name = 'buildingblocks-security'
+
+include 'hmac'

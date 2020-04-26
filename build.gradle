@@ -1,0 +1,16 @@
+allprojects {
+    group = 'org.digitalmind.buildingblocks.security'
+    version = '1.0.0'
+
+    repositories {
+        mavenCentral()
+        maven {
+            name = "digitalmind"
+            url = uri("https://maven.pkg.github.com/Digital-Mind-Solutions/maven-repository")
+            credentials {
+                username = project.findProperty("dm.ghub.user") ?: System.getenv("DM_GITHUB_USER")
+                password = project.findProperty("dm.ghub.key") ?: System.getenv("DM_GITHUB_TOKEN")
+            }
+        }
+    }
+}
